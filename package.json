@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "tsc",
-    "start": "tsc -w"
-  },
+    "watch": "tsc -w",
+    "server" : "lite-server --baseDir=app",
+    "start" : "concurrently \"run npm watch\" \"run npm server\""
   "author": "",
   "license": "ISC",
   "devDependencies": {
